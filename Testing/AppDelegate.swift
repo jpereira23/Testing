@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var player: AVAudioPlayer?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let url = Bundle.main.url(forResource: "Audio", withExtension: "mp3")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return false}
+            player.numberOfLoops = -1
+            player.prepareToPlay()
+            player.play()
+            
+        } catch let error as NSError {
+            print(error.description)
+        }
+        
+        
         // Override point for customization after application launch.
         return true
     }

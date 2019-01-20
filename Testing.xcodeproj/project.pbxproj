@@ -20,9 +20,11 @@
 		20BC60D621EFB67E00CA7A43 /* GameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC60D521EFB67E00CA7A43 /* GameSprite.swift */; };
 		20BC60D821EFB6D300CA7A43 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC60D721EFB6D300CA7A43 /* Warrior.swift */; };
 		20BC60DA21EFBA5A00CA7A43 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC60D921EFBA5A00CA7A43 /* Player.swift */; };
-		20BC60DC21EFCC5100CA7A43 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC60DB21EFCC5100CA7A43 /* MainMenuScene.swift */; };
 		20BC60DE21EFD17B00CA7A43 /* LevelIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC60DD21EFD17B00CA7A43 /* LevelIcon.swift */; };
 		20BC60E021EFDB8D00CA7A43 /* Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20BC60DF21EFDB8D00CA7A43 /* Audio.mp3 */; };
+		20BC60E421EFE6E900CA7A43 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BC60E321EFE6E900CA7A43 /* logo.png */; };
+		20E935DA21F47C2C00A43030 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E935D921F47C2C00A43030 /* MainMenu.swift */; };
+		20E935DC21F485EA00A43030 /* ChapterOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E935DB21F485EA00A43030 /* ChapterOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +64,11 @@
 		20BC60D521EFB67E00CA7A43 /* GameSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSprite.swift; sourceTree = "<group>"; };
 		20BC60D721EFB6D300CA7A43 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 		20BC60D921EFBA5A00CA7A43 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		20BC60DB21EFCC5100CA7A43 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		20BC60DD21EFD17B00CA7A43 /* LevelIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelIcon.swift; sourceTree = "<group>"; };
 		20BC60DF21EFDB8D00CA7A43 /* Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Audio.mp3; sourceTree = "<group>"; };
+		20BC60E321EFE6E900CA7A43 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../Documents/bartend/src/assets/imgs/logo.png; sourceTree = "<group>"; };
+		20E935D921F47C2C00A43030 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		20E935DB21F485EA00A43030 /* ChapterOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,6 @@
 		20BC608B21EFA40E00CA7A43 = {
 			isa = PBXGroup;
 			children = (
-				20BC60D521EFB67E00CA7A43 /* GameSprite.swift */,
-				20BC60D721EFB6D300CA7A43 /* Warrior.swift */,
-				20BC60D921EFBA5A00CA7A43 /* Player.swift */,
 				20BC609621EFA40F00CA7A43 /* Testing */,
 				20BC60B121EFA41000CA7A43 /* TestingTests */,
 				20BC60BC21EFA41000CA7A43 /* TestingUITests */,
@@ -118,18 +119,20 @@
 		20BC609621EFA40F00CA7A43 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				20E935DB21F485EA00A43030 /* ChapterOne.swift */,
 				20BC609721EFA40F00CA7A43 /* AppDelegate.swift */,
+				20BC60D521EFB67E00CA7A43 /* GameSprite.swift */,
+				20E935D821F47C0700A43030 /* HelperClasses */,
+				20E935D721F47BE300A43030 /* MainMenu */,
 				20BC609921EFA40F00CA7A43 /* GameScene.sks */,
 				20BC609B21EFA40F00CA7A43 /* Actions.sks */,
 				20BC609D21EFA40F00CA7A43 /* GameScene.swift */,
-				20BC60DB21EFCC5100CA7A43 /* MainMenuScene.swift */,
 				20BC609F21EFA40F00CA7A43 /* GameViewController.swift */,
-				20BC60DF21EFDB8D00CA7A43 /* Audio.mp3 */,
+				20BC60E321EFE6E900CA7A43 /* logo.png */,
 				20BC60A121EFA40F00CA7A43 /* Main.storyboard */,
 				20BC60A421EFA41000CA7A43 /* Assets.xcassets */,
 				20BC60A621EFA41000CA7A43 /* LaunchScreen.storyboard */,
 				20BC60A921EFA41000CA7A43 /* Info.plist */,
-				20BC60DD21EFD17B00CA7A43 /* LevelIcon.swift */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -150,6 +153,25 @@
 				20BC60BF21EFA41000CA7A43 /* Info.plist */,
 			);
 			path = TestingUITests;
+			sourceTree = "<group>";
+		};
+		20E935D721F47BE300A43030 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				20BC60DF21EFDB8D00CA7A43 /* Audio.mp3 */,
+				20BC60DD21EFD17B00CA7A43 /* LevelIcon.swift */,
+				20E935D921F47C2C00A43030 /* MainMenu.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		20E935D821F47C0700A43030 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				20BC60D921EFBA5A00CA7A43 /* Player.swift */,
+				20BC60D721EFB6D300CA7A43 /* Warrior.swift */,
+			);
+			path = HelperClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +282,7 @@
 				20BC60A321EFA40F00CA7A43 /* Main.storyboard in Resources */,
 				20BC609A21EFA40F00CA7A43 /* GameScene.sks in Resources */,
 				20BC60A521EFA41000CA7A43 /* Assets.xcassets in Resources */,
+				20BC60E421EFE6E900CA7A43 /* logo.png in Resources */,
 				20BC60A821EFA41000CA7A43 /* LaunchScreen.storyboard in Resources */,
 				20BC609C21EFA40F00CA7A43 /* Actions.sks in Resources */,
 			);
@@ -289,10 +312,11 @@
 				20BC60D621EFB67E00CA7A43 /* GameSprite.swift in Sources */,
 				20BC60D821EFB6D300CA7A43 /* Warrior.swift in Sources */,
 				20BC609E21EFA40F00CA7A43 /* GameScene.swift in Sources */,
+				20E935DA21F47C2C00A43030 /* MainMenu.swift in Sources */,
 				20BC60DE21EFD17B00CA7A43 /* LevelIcon.swift in Sources */,
+				20E935DC21F485EA00A43030 /* ChapterOne.swift in Sources */,
 				20BC60A021EFA40F00CA7A43 /* GameViewController.swift in Sources */,
 				20BC60DA21EFBA5A00CA7A43 /* Player.swift in Sources */,
-				20BC60DC21EFCC5100CA7A43 /* MainMenuScene.swift in Sources */,
 				20BC609821EFA40F00CA7A43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEPL73VPNG;
 				INFOPLIST_FILE = Testing/Info.plist;
@@ -475,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jeff.Testing;
+				PRODUCT_BUNDLE_IDENTIFIER = GOOD.TESTING1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEPL73VPNG;
 				INFOPLIST_FILE = Testing/Info.plist;
@@ -493,7 +519,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jeff.Testing;
+				PRODUCT_BUNDLE_IDENTIFIER = GOOD.TESTING1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
